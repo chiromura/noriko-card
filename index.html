@@ -3,55 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>のりこの自己紹介カード</title>
+    <title>天才のりちゃんの宇宙基地</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'M PLUS Rounded 1c', sans-serif; }
+        body { font-family: 'Yomogi', cursive; }
+        /* 背景をちょっと宇宙っぽく、でもポップに */
+        .cosmic-bg {
+            background-color: #fff9f0;
+            background-image: radial-gradient(#FFD700 2px, transparent 2px), radial-gradient(#FF69B4 2px, transparent 2px);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+        }
     </style>
 </head>
-<body class="bg-orange-50 min-h-screen flex items-center justify-center p-4">
+<body class="cosmic-bg min-h-screen flex items-center justify-center p-4">
 
-    <div class="bg-white max-w-sm w-full rounded-3xl shadow-xl overflow-hidden border-4 border-orange-200">
+    <div class="bg-white/90 backdrop-blur-sm max-w-sm w-full rounded-[40px] shadow-2xl overflow-hidden border-4 border-yellow-400 relative">
 
-        <div class="h-32 bg-gradient-to-r from-yellow-200 to-orange-300"></div>
+        <div class="absolute -top-2 -right-2 text-6xl rotate-12 z-10 animate-bounce">👽</div>
+
+        <div class="h-36 bg-gradient-to-br from-yellow-300 via-orange-300 to-pink-300 relative overflow-hidden">
+            <div class="absolute inset-0 flex items-center justify-center opacity-30 text-white text-4xl font-bold tracking-widest rotate-[-10deg]">
+                GOKIGEN GENIUS
+            </div>
+        </div>
 
         <div class="px-6 pb-8 relative">
 
-            <div class="relative -mt-16 mb-4 flex justify-center">
-                <div class="w-32 h-32 rounded-full border-4 border-white shadow-md bg-orange-50 flex items-center justify-center overflow-hidden">
+            <div class="relative -mt-20 mb-4 flex justify-center">
+                <div class="w-36 h-36 rounded-full border-[6px] border-white shadow-xl bg-yellow-100 flex items-center justify-center overflow-hidden">
                     <img src="chiro_mura_logo.png" alt="チロ村ロゴ" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute bottom-0 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full border-2 border-white shadow-md transform translate-y-1/2">
+                    精神年齢：小学生🎒
                 </div>
             </div>
 
             <div class="text-center mb-6">
-                <p class="text-orange-400 font-bold text-sm tracking-wide mb-1 bg-orange-100 inline-block px-3 py-1 rounded-full">
-                    人生のいいとこ編集室長
+                <p class="text-orange-600 font-bold text-lg mb-1 inline-block">
+                    地球観光中の天才宇宙人 🛸
                 </p>
-                <h1 class="text-3xl font-bold text-gray-700 mt-2">のりこ</h1>
+                <h1 class="text-4xl font-bold text-gray-800 mt-1 drop-shadow-sm">天才のりちゃん</h1>
+                <p class="text-sm text-gray-500 mt-2 font-bold leading-tight">
+                    （長浜の歩くパワースポット✨<br>兼 マルチクリエイター）
+                </p>
             </div>
 
-            <div class="bg-orange-50 rounded-2xl p-5 border-2 border-orange-100">
-                <h2 class="text-center text-lg font-bold text-orange-400 mb-4">✨ 私の3つの武器 ✨</h2>
-                <ul class="space-y-3">
-                    <li class="flex items-center text-gray-600 font-bold">
-                        <span class="bg-sky-300 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">🤖</span>
-                        AI使い（魔法使い！）
+            <div class="bg-yellow-50 rounded-3xl p-5 border-2 border-yellow-200 text-left shadow-inner">
+                <h2 class="text-center text-xl font-bold text-orange-500 mb-4">🌏 地球での遊び方（能力）</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="bg-pink-400 text-white rounded-full w-10 h-10 flex-shrink-0 flex items-center justify-center mr-3 text-lg shadow-sm">💥</span>
+                        <div>
+                            <span class="block text-gray-800 font-bold text-lg">心の壁、秒で破壊。</span>
+                            <span class="text-sm text-gray-600">初対面？関係ないよ！私の「笑顔」ビームで一瞬で友達になっちゃいます。</span>
+                        </div>
                     </li>
-                    <li class="flex items-center text-gray-600 font-bold">
-                        <span class="bg-lime-400 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">🛒</span>
-                        平和堂レジ打ちの観察眼
+                    <li class="flex items-start">
+                        <span class="bg-purple-400 text-white rounded-full w-10 h-10 flex-shrink-0 flex items-center justify-center mr-3 text-lg shadow-sm">⚡</span>
+                        <div>
+                            <span class="block text-gray-800 font-bold text-lg">生きる「磁場調整」</span>
+                            <span class="text-sm text-gray-600">私がいるだけで空間浄化完了✨ あなたのWebサイトもパワースポットにします。</span>
+                        </div>
                     </li>
-                    <li class="flex items-center text-gray-600 font-bold">
-                        <span class="bg-orange-300 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">😆</span>
-                        無敵の笑顔とご機嫌
+                    <li class="flex items-start">
+                        <span class="bg-blue-400 text-white rounded-full w-10 h-10 flex-shrink-0 flex items-center justify-center mr-3 text-lg shadow-sm">🤖</span>
+                        <div>
+                            <span class="block text-gray-800 font-bold text-lg">ガキなのに「天才」</span>
+                            <span class="text-sm text-gray-600">接客も営業もWeb制作も。AIを使って遊び感覚でこなす、自分大好きな天才です✌️</span>
+                        </div>
                     </li>
                 </ul>
             </div>
 
             <div class="mt-8 text-center">
-                 <button class="bg-gradient-to-r from-orange-300 to-pink-300 text-white font-bold py-3 px-10 rounded-full shadow-md hover:shadow-lg hover:scale-105 transition duration-200">
-                    話しかけてみる！ 👋
+                 <button class="bg-gradient-to-r from-pink-400 to-yellow-400 text-white font-bold text-xl py-4 px-8 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition duration-200 border-4 border-white animate-pulse">
+                    宇宙人と交信する 📡
                 </button>
             </div>
 
